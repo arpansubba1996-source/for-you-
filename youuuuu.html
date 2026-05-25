@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Love ❤️</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(45deg, #ff9a9e, #fecfef, #fecfef, #ff9a9e);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 600px;
+            margin: 20px;
+        }
+        
+        .heart {
+            font-size: 3em;
+            color: #ff6b6b;
+            animation: heartbeat 2s infinite;
+            margin-bottom: 20px;
+        }
+        
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            14% { transform: scale(1.1); }
+            28% { transform: scale(1); }
+            42% { transform: scale(1.1); }
+            70% { transform: scale(1); }
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+        
+        .message {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 4px solid #ff6b6b;
+        }
+        
+        .photos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin: 30px 0;
+        }
+        
+        .photo {
+            width: 100%;
+            height: 150px;
+            border-radius: 10px;
+            object-fit: cover;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .photo:hover {
+            transform: scale(1.05);
+        }
+        
+        .distance-message {
+            font-style: italic;
+            color: #888;
+            margin-top: 20px;
+        }
+        
+        .footer {
+            margin-top: 30px;
+            color: #ff6b6b;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heart">💖</div>
+        
+        <h1>For My Beautiful Love</h1>
+        
+        <div class="message">
+            <p>My dearest love,</p>
+            <br>
+            <p>Even though we're miles apart, you're always in my heart. Every moment without you feels like forever, but every memory we've shared keeps me going until we're together again.</p>
+            <br>
+            <p>You are my sunshine on cloudy days, my peace in the chaos, and my home no matter where I am in the world.</p>
+            <br>
+            <p>I love you more than words can say, more than the stars in the sky, and more than all the distance between us. ✨</p>
+        </div>
+        
+        <div class="photos">
+            <!-- Replace these src attributes with your actual photo paths -->
+            <img src="photo1.jpg" alt="Our Memory 1" class="photo">
+            <img src="photo2.jpg" alt="Our Memory 2" class="photo">
+            <img src="photo3.jpg" alt="Our Memory 3" class="photo">
+            <img src="photo4.jpg" alt="Our Memory 4" class="photo">
+        </div>
+        
+        <div class="distance-message">
+            "Distance means nothing when someone means everything."
+        </div>
+        
+        <div class="footer">
+            Forever yours ❤️<br>
+            [Your Name]
+        </div>
+    </div>
+</body>
+</html>
